@@ -1,38 +1,110 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  background: #efefef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   text-align: center;
 }
+button {
+  border: none;
+  font-size: 1rem;
+  padding: 15px 0px;
+  margin: 10px;
+  width: 55px;
+  border-radius: 12px;
+  font-weight: bold;
+  background: #141414;
+  color: #fff;
+  cursor: pointer;
+}
+.buttonDay {
+  background: #f1f1f1;
+  color: #000;
+}
+.buttonBoxDay {
+  background: #f9f9f9;
+}
+.buttonBoxNight {
+  background: #1e1e1e;
+}
+.buttonNight {
+  background: #141414;
+  color: #fff;
+}
+#equalBtn {
+  width: 136px;
+}
+.buttons {
+  border-radius: 25px;
+  padding-bottom: 14px;
+}
 
-.App-logo {
-  height: 40vmin;
+p.resultFinal {
+  padding: 10px;
+  height: 130px;
+  text-align: right;
+  font-size: 1.9rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  word-break: break-all;
+}
+.disabled {
   pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.calcBox {
+  width: 20rem;
+  margin: auto;
+  background: #000;
+  border-radius: 25px;
+}
+.calcBoxDay {
+  background: #fff;
+}
+.calcBoxNight {
+  background: #000;
+}
+button[name="C"],
+button[name="CE"],
+button[name="%"] {
+  color: #01e3e3;
+}
+button[name="/"],
+button[name="+"],
+button[name="-"],
+button[name="*"],
+button[name="="] {
+  color: coral;
+}
+.calcBox > * {
+  color: #fff;
+}
+.themeColor span {
+  margin: 7px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.themeColor {
+  border-radius: 15px;
+  background: #cfcece5e;
+  display: inline-block;
+  margin-top: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+.themeColor span i {
+  padding: 9px 5px;
+  cursor: pointer;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.themeColor i[value="Day"] {
+  opacity: 0.5;
+}
+div .themeColor .iconDay {
+  color: #000;
+  opacity: 1;
 }
